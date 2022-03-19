@@ -1,0 +1,24 @@
+package gcpd3
+
+import (
+    "fmt"
+    "bytes"
+    "context"
+    "io/ioutil"
+    "path"
+    "strings"
+    "sync"
+    "time"
+
+    "cloud.google.com/go/storage"
+    ds "github.com/ipfs/go-datastore"
+    dsq "github.com/ipfs/go-datastore/query"
+)
+
+
+
+client, err := storage.NewClient(ctx)
+
+// client, err := storage.NewClient(ctx, option.WithCredentialsFile("path/to/keyfile.json"))
+
+

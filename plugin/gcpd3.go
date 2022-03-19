@@ -28,5 +28,5 @@ func (gsUtilDs GCPPlugin) DatastoreTypeName() string {
 }
 
 func (gsUtilDs GCPPlugin) DatastoreConfigParser() fsrepo.ConfigFromMap {
-
+	return nil
 }
